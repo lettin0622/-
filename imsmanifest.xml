@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.example.english_shooting_quiz" 
+          version="1.3" 
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" 
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" 
+          xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" 
+          xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" 
+          xmlns:imscp="http://www.imsglobal.org/xsd/imscp_v1p1" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd 
+                              http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd 
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd 
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd 
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd">
+
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 3rd Edition</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+    </metadata>
+    
+    <organizations default="ORG-1">
+        <organization identifier="ORG-1">
+            <title>英文射擊測驗</title>
+            <item identifier="ITEM-1" identifierref="RES-1" isvisible="true">
+                <title>開始測驗</title>
+                <adlcp:dataFromLMS>quiz_attempt_1</adlcp:dataFromLMS>
+            </item>
+        </organization>
+    </organizations>
+    
+    <resources>
+        <resource identifier="RES-1" type="webcontent" adlcp:scormType="sco" href="index.html">
+            <file href="index.html"/>
+            <file href="sketch.js"/>
+            <file href="scorm_api_wrapper.js"/>
+            <file href="airplane.png"/>
+            <file href="questions.csv"/>
+        </resource>
+    </resources>
+</manifest>

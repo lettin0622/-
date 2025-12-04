@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文射擊測驗</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; 
+            overflow: hidden; 
+            flex-direction: column; /* 允許垂直排列 SCORM 狀態和遊戲容器 */
+        }
+
+        #scorm-status {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+            font-family: sans-serif;
+        }
+
+        #game-container {
+            /* 畫布寬度增加到 900px */
+            width: 900px; 
+            height: 550px;
+            border: 5px solid #E0BBE4; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+    <script src="scorm_api_wrapper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div id="scorm-status">SCORM 狀態: 尚未初始化...</div>
+    <div id="game-container"></div> 
+    <script src="sketch.js"></script>
+</body>
+</html>
